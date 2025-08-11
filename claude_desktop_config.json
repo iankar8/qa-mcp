@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "deployment-tester": {
+      "command": "deployment-tester-mcp",
+      "env": {}
+    }
+  }
+}

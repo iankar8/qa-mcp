@@ -1,0 +1,50 @@
+{
+  "name": "qa-mcp",
+  "version": "1.0.0",
+  "description": "Comprehensive QA MCP extension for localhost testing with automated issue detection, console monitoring, and bug reporting",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "qa-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "watch": "tsx watch src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "qa",
+    "testing",
+    "localhost",
+    "health-check",
+    "console-monitoring",
+    "bug-detection",
+    "functional-testing",
+    "claude-code",
+    "automation"
+  ],
+  "author": "Ian Kar",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "puppeteer": "^21.0.0",
+    "axios": "^1.6.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "manifest.json",
+    "README.md"
+  ]
+}
